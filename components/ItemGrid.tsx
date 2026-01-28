@@ -29,12 +29,11 @@ export const ItemGrid: React.FC<ItemGridProps> = ({ count, emoji, label, isCompa
         )}
       </div>
 
-      {/* Khu vực hiển thị con số và tên - Giống ảnh mẫu */}
-      <div className="w-full flex flex-col items-center pt-2">
-        <div className="bg-green-50 px-6 py-1 rounded-xl shadow-sm border border-green-100">
+      {/* Khu vực hiển thị con số - Đã loại bỏ phần chữ chú thích tên đồ vật bên dưới */}
+      <div className="w-full flex flex-col items-center pt-2 pb-1">
+        <div className="bg-green-50 px-6 py-2 rounded-2xl shadow-sm border border-green-100 min-w-[80px] flex justify-center">
            <span className="text-4xl font-black text-green-700 math-font leading-none">{count}</span>
         </div>
-        <div className="text-[11px] text-blue-400 font-black uppercase mt-1 tracking-tighter drop-shadow-sm">{label}</div>
       </div>
     </div>
   );
